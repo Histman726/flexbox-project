@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/* Base styles */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.6rem;/*1.6 x 10 = 16px*/
+  color: whitesmoke;
+  transition: color .35s ease;
+}
+
+h1, p, h2{
+  margin: 1.6rem 0;
+}
+
+h1{
+  margin-top: 0 ;
+  font-weight: 800;
+  font-size: 3.6rem;
+}
+
+h2{
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+
+p{
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+section{
+  padding: 100px 0;
+}
+
+/* Hero Section */
+header{
+  height: 100vh;
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('img/bg.jpeg') no-repeat center;
+  color: whitesmoke;
+}
+
+.logo h1{
+  font-size: 3.2rem;
+  color: #4caf50;
+  margin: 0;
+}
+
+nav{
+  padding: 2% 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-left: 2.5rem;
+}
+
+nav ul li a:hover{
+  color: #4caf50;
+}
+
+.menu i{
+  font-size: 4rem;
+}
+
+.menu{
+  display: none;
+}
+
+.header-content{
+  width: 50%;
+  position: relative;
+  top: 16%;
+  left: 8%;
+}
+
+form{
+  margin: 2.4rem 0;
+}
+
+input{
+  font-size: 1.6rem;
+}
+
+input[type='email'], input[type='text']{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 3.2rem 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type='submit']{
+  width: 50%;
+  background: #4caf50;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+input::placeholder{
+  font-size: 1.4rem;
+  color: #cccccc;
+}
+
+/* About section */
+.about-left,
+.about-right,
+.about-middle{
+  flex-basis: 30%;
+  padding: 1.6rem;
+}
+
+.btn{
+  background: #4caf50;
+  padding: 8px 16px;
+  display: inline-block;
+  margin: 2rem 0;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* About 2 Section */
+.card i{
+  font-size: 60px;
+  color: #4caf50;
+}
+
+.about2{
+  background: #222;
+  color: whitesmoke;
+}
+
+.about2-left{
+  flex-basis: 50%;
+}
+
+.about2-right{
+  flex-basis: 30%;
+}
+
+.about2 .card{
+  padding: 3rem 8rem;
+  color: #222222;
+  background: #dcdcdc;
+  margin: 1.6rem;
+  text-align: center;
+}
+
+/* Process section */
+.process .row{
+  justify-content: center;
+}
+
+.process-content{
+  margin-top: 100px;
+}
+
+.progress-bar{
+  width: 80%;
+  height: 2px;
+  background: #222;
+  margin: auto;
+  position: relative;
+}
+
+.progress-bar .c1,
+.progress-bar .c2,
+.progress-bar .c3{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #222;
+  position: absolute;
+}
+
+.progress-bar .c1{
+  top: -8px;
+  left: 50px;
+}
+
+.progress-bar .c2{
+  top: -8px;
+  left: 50%;
+}
+
+.progress-bar .c3{
+  top: -8px;
+  right: 50px;
+}
+
+.box1, .box2, .box3{
+  padding: 1.8rem;
+}
+
+.process .box2{
+  text-align: center;
+}
+
+.process .box3{
+  text-align: right;
+}
+
+.process-content h2{
+  color: #4caf50;
+}
+
+/* Testimony */
+.testimony{
+  background: #222;
+  color: whitesmoke;
+}
+
+.testimony .test{
+  background: #505050;
+  padding: 4rem 8rem;
+  margin: 0 1rem;
+}
+
+.testimony .image{
+  height: 80px;
+  width: 80px;
+}
+
+.testimony .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.test .test-content .icons{
+  font-size: 4rem;
+  color: white;
+}
+
+/* Contact */
+.contact .row{
+  justify-content: center;
+}
+
+.contact form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact form input{
+  width: 50%;
+}
+
+.contact textarea{
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  font-size: 1.3rem;
+  resize: none;
+  color: #ccc;
+  margin: 1.2rem 0;
+}
+
+/* Footer */
+footer{
+  height: 80px;
+  background: #222;
+  color: whitesmoke;
+  line-height: 80px;
+  text-align: center;
+}
+
+footer p i{
+  color: white;
+  font-size: 4rem;
+  margin-inline: 10px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  .row{
+    flex-direction: column;
+  }
+
+  nav{
+    flex-direction: column;
+    position: relative;
+  }
+
+  nav ul{
+    margin-top: 1rem;
+    display: none;
+  }
+
+  .menu{
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 65px;
+  }
+
+  nav ul li{
+    padding: 2% 0;
+  }
+
+  .show-menu{
+    display: block;
+  }
+
+  .header-content{
+    width: 100%;
+    top: 16%;
+    left: 0;
+    text-align: center;
+    padding: 0 8px;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='submit']{
+    width: 80%;
+    margin: 1.2rem auto;
+  }
+
+  .progress-bar{
+    transform: rotate(90deg) translateY(260px) translateX(70px);
+    top: 195px;
+    width: 620px;
+  }
+
+  .progress-bar .c1{
+    left: 90px;
+  }
+
+  .progress-bar .c2{
+    left: 290px;
+  }
+
+  .progress-bar .c3{
+    left: 490px;
+  }
+
+  .process .box1, .process .box2, .process .box3{
+    text-align: left;
+  }
+
+  .testimony .test{
+    margin: 1.6rem 0;
+  }
+
+  .contact form input,
+  .contact form textarea{
+    width: 100%;
+  }
+}
